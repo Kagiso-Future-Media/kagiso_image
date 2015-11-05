@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='kagiso_image',
-    version='0.0.1',
+    version='0.0.2',
     author='Kagiso Media',
     author_email='development@kagiso.io',
     description='Kagiso Image with Attribution',
