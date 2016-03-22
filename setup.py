@@ -10,6 +10,6 @@ setup(
     url='https://github.com/Kagiso-Future-Media/kagiso_image',
     packages=find_packages(),
     install_requires = [
-        'wagtail>=1.1',
+        'wagtail>=1.4',
     ]
 )
