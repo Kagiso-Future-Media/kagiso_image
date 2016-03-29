@@ -12,7 +12,7 @@ from django.conf import settings
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('wagtailcore', '0029_auto_20160322_1251'),
+        ('wagtailcore', '0028_merge'),
         ('kagiso_image', '0001_initial'),
     ]
 
