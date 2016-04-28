@@ -1,5 +1,3 @@
-import os
-
 DEBUG = True
 
 SECRET_KEY = '^7jcx7^h#b@%a76lr@a2!7xj#@4@5ayuyan9c$y#(_(8l3)_%t'
