@@ -11,6 +11,7 @@ django-taggit==0.18.3     # via wagtail
 django-treebeard==4.0.1   # via wagtail
 django==1.8.12
 djangorestframework==3.3.3  # via wagtail
+fake-factory==0.5.7
 flake8-import-order==0.8
 flake8-print==2.0.2
 flake8-quotes==0.3.0
@@ -25,8 +26,9 @@ py==1.4.31                # via pytest
 pyflakes==1.0.0           # via flake8
 pytest-django==2.9.1
 pytest==2.9.2             # via pytest-django
+python-dateutil==2.5.3    # via fake-factory
 pytz==2016.4              # via django-modelcluster
-six==1.10.0               # via html5lib
+six==1.10.0               # via fake-factory, html5lib, python-dateutil
 unidecode==0.4.19         # via wagtail
 wagtail==1.4.3
 willow==0.3.1             # via wagtail

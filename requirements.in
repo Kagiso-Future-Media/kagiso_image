@@ -1,6 +1,7 @@
 django==1.8.12
 wagtail==1.4.3
 psycopg2
+fake-factory
 
 flake8
 flake8-import-order
