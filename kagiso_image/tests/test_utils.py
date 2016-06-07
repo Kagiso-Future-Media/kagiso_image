@@ -7,8 +7,8 @@ from ..utils import create_test_image
 @pytest.mark.django_db
 def test_create_test_image(tmpdir):
     settings.MEDIA_ROOT = str(tmpdir)
-    width = 150
-    height = 150
+    width = 400
+    height = 400
 
     result = create_test_image(width, height)
 

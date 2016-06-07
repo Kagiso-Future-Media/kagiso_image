@@ -7,6 +7,8 @@ from wagtail.wagtailimages.models import (
     Image,
 )
 
+from .exceptions import ImageTooSmall
+
 
 class ImageWithAttribution(AbstractImage):
     attribution = models.CharField(max_length=255, blank=True, null=True)
@@ -22,6 +24,13 @@ class ImageWithAttribution(AbstractImage):
     @property
     def full_url(self):
         return self.get_rendition('original').url
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            if self.width < 350 or self.height < 350:
+                raise ImageTooSmall(self)
+
+        super().save(*args, **kwargs)
 
 
 class ImageWithAttributionRendition(AbstractRendition):
