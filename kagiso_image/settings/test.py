@@ -58,3 +58,8 @@ DATABASES = {
         'PASSWORD': 'password',
     }
 }
+
+# Project specific settings
+##
+MIN_IMAGE_WIDTH = 350
+MIN_IMAGE_HEIGHT = 350

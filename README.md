@@ -29,3 +29,12 @@ class MyPage(Page):
         related_name='+'
     )
 ```
+
+## Settings
+```py
+MIN_IMAGE_WIDTH = 100
+MIN_IMAGE_HEIGHT = 100
+
+# The above settings are only enforced if both are set!
+# The values are None by default
+```

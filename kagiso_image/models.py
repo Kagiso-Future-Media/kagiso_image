@@ -7,6 +7,7 @@ from wagtail.wagtailimages.models import (
     Image,
 )
 
+from .constants import MIN_IMAGE_HEIGHT, MIN_IMAGE_WIDTH
 from .exceptions import ImageTooSmall
 
 
@@ -27,8 +28,10 @@ class ImageWithAttribution(AbstractImage):
 
     def save(self, *args, **kwargs):
         if not self.id:
-            if self.width < 350 or self.height < 350:
-                raise ImageTooSmall(self)
+            if MIN_IMAGE_WIDTH and MIN_IMAGE_HEIGHT:
+                if (self.width < MIN_IMAGE_WIDTH or
+                        self.height < MIN_IMAGE_HEIGHT):
+                    raise ImageTooSmall(self)
 
         super().save(*args, **kwargs)
 
