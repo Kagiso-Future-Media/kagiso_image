@@ -1,8 +1,12 @@
 django==1.8.12
 wagtail==1.4.3
+psycopg2
 
 flake8
 flake8-import-order
+flake8-print
+flake8-quotes
 pep8-naming
 
+coverage
 pytest-django
