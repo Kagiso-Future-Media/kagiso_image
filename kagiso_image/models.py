@@ -12,11 +12,13 @@ class ImageWithAttribution(AbstractImage):
     attribution = models.CharField(max_length=255, blank=True, null=True)
     alt_text = models.CharField(max_length=255, blank=True, null=True)
     caption = models.CharField(max_length=255, blank=True, null=True)
+    hyperlink = models.URLField(max_length=200, blank=True, null=True)
 
     admin_form_fields = Image.admin_form_fields + (
         'attribution',
         'alt_text',
         'caption',
+        'hyperlink',
     )
 
     @property
