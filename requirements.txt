@@ -15,7 +15,7 @@ flake8-import-order==0.8
 flake8-print==2.0.2
 flake8-quotes==0.3.0
 flake8==2.6.2
-html5lib-0.9999999        # via wagtail
+html5lib==0.999999        # via wagtail
 mccabe==0.5.0             # via flake8
 pep8-naming==0.4.1
 pep8==1.7.0               # via flake8-import-order, flake8-quotes
