@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='kagiso_image',
-    version='3.0.0',
+    version='3.0.1',
     author='Kagiso Media',
     author_email='development@kagiso.io',
     description='Kagiso Image with Attribution',
@@ -11,6 +11,5 @@ setup(
     packages=find_packages(),
     install_requires=[
         'wagtail>=1.8.0',
-        'fake-factory>=0.5.7',
     ]
 )
