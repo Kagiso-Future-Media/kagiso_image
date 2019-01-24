@@ -38,3 +38,8 @@ MIN_IMAGE_HEIGHT = 100
 # The above settings are only enforced if both are set!
 # The values are None by default
 ```
+
+# Upload
+python3 -m pip install --upgrade setuptools wheel twine
+python3 setup.py sdist bdist_wheel
+python3 -m twine upload dist/*
